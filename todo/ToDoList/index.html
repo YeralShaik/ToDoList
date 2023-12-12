@@ -8,42 +8,48 @@
 </head>
 <body>
     <main> 
-    <header class="header-section" >
-        <div class="navBar-container" >
-            <h1>ToDo-List</h1>
-            <button>🔍</button>
-        </div>
-    </header>
-        <section class="task-section">
-            <div class="task-container">
+        <header class="header-section inactive" id="header-section">
+            <div class="navBar-container inactive" id="navBar-container">
+                <h1> To-Do List </h1>
+                <button>🔍</button>
+            </div>
+        </header>
+        <section class="task-section inactive" id="task-section">
+  
+            <div class="task-container inactive" id="task-container">
+                <h1>Today</h1>
                 <ul class="task-list">
                   <li>
+                   <div class="circule"></div>
+                    <label for="opcion1">Tarea 1</label>
                     <input type="radio" name="opcion" id="opcion1">
-                    <label for="opcion1">Tare1</label>
                   </li>
                   <li>
-                    <input type="radio" name="opcion" id="opcion2">
-                    <label for="opcion2">Opción 2</label>
-                  </li>
+                    <div class="circule02" "></div>
+                     <label for="opcion01">Tarea 1</label>
+                     <input type="radio" name="opcion" id="opcion1">
+                   </li>
                 </ul>
-              </div>       
-              <div  class="add-Task">
-                <button class="add-Button">+</button>
-              </div>
-        </section>
-        <section class="createTask-section">
-            <div class="createTask-container">
-               
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7MAbKVQH7x9j2AMsCkAviK81_10ixgMVt41_MVAaqgQ&s" alt="">
-                    <input type="text" placeholder="10:00">
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7MAbKVQH7x9j2AMsCkAviK81_10ixgMVt41_MVAaqgQ&s" alt="">
-                    <input type="text">    
-                
+            </div>       
+            <div id="add-Task" class=" add-Task inactive">
+                <button class="add-Button" id="add-Button">+</button>
             </div>
-            <button>Add</button>
+        </section>
+        <section class="createTask-section inactive" id="createTask-section">
+          
+            <div class="newTask-tittle">
+                <button class="icon-exit inactive" id="iconx">✖️</button>
+                <input type="text" placeholder="Write">
+            </div>
+            <div class="createTask-container inactive" id="createTask-container">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7MAbKVQH7x9j2AMsCkAviK81_10ixgMVt41_MVAaqgQ&s" alt="">
+                <input type="text" placeholder="10:00">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7MAbKVQH7x9j2AMsCkAviK81_10ixgMVt41_MVAaqgQ&s" alt="">
+                <input type="text">    
+            </div>
+            <button class="createTask-btn">Add</button>
         </section>
     </main>
-
 
     <script src="./src/main.js"></script>
 </body>
